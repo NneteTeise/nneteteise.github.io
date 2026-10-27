@@ -1,0 +1,41 @@
+
+:root{--mint:#16a773;--ink:#132922;--muted:#51685f;--line:#dbe7df}
+.tele-hero{padding-top:68px;padding-bottom:32px;display:grid;grid-template-columns:1.08fr .92fr;gap:35px;align-items:center}
+.tele-hero h1{font-size:clamp(2.35rem,5vw,4rem);line-height:1.06;margin:14px 0 22px;letter-spacing:-.045em}
+.tele-hero p{font-size:1.075rem;line-height:1.65;color:var(--muted)}
+.tele-cover{width:100%;border-radius:20px;border:1px solid #dce9e1;box-shadow:0 17px 36px rgba(20,70,40,.1)}
+.tele-caption{font-size:12px;color:#5b7167;padding-top:8px}
+.tele-tags{display:flex;flex-wrap:wrap;gap:8px;margin:19px 0}
+.tele-tags span{background:#e9f7f0;border:1px solid #b6e1cc;border-radius:999px;padding:7px 11px;font-weight:650;font-size:13px;color:#116f4d}
+.tele-stack{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.tele-stat{border:1px solid var(--line);background:#fff;border-radius:14px;padding:18px}
+.tele-stat strong{display:block;font-size:27px;color:#087d51}.tele-stat small{display:block;color:var(--muted);margin-top:5px}
+.tele-shotgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}
+.tele-shot{border:1px solid var(--line);background:white;border-radius:15px;padding:12px;overflow:hidden}
+.tele-shot img{display:block;width:100%;aspect-ratio:16/10;object-fit:contain;background:#f2f5f3;border-radius:8px}
+.tele-shot .sub{font-size:13px;color:#5c6d66;margin:8px 4px 1px}
+.tele-row{display:flex;align-items:flex-start;gap:16px}.tele-number{display:grid;place-items:center;flex:0 0 38px;height:38px;border-radius:12px;background:#e3f5eb;color:#0d8055;font-weight:900}
+.tele-code{background:#101c18;color:#d1e9dc;border-radius:14px;padding:19px;overflow:auto;font:15px/1.65 ui-monospace,Consolas,monospace;white-space:pre-wrap}
+.tele-files{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.tele-file{display:block;border:1px solid var(--line);border-radius:13px;padding:19px;background:white;color:#087c52;text-decoration:none;font-weight:800}
+.tele-file small{display:block;color:#617367;font-weight:400;margin-top:5px}
+/* interactive panel */
+.tele-play{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px}
+.tele-panel{border:1px solid #d6e7dc;border-radius:17px;background:#fff;padding:22px;min-width:0}
+.tele-switches{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0}
+.tele-switches button{border:1px solid #cde1d5;background:#f3faf6;color:#174b36;padding:10px 13px;border-radius:10px;cursor:pointer;font-weight:700}
+.tele-switches button[aria-pressed=true]{background:#0d7d53;color:white}
+.tele-inputrow{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;margin:10px 0}
+.tele-inputrow label{display:flex;gap:12px;align-items:center;font-size:14px;color:#53655b}
+.tele-inputrow input{width:100%;min-width:0;padding:12px;border:1px solid #bbd3c4;border-radius:9px;font-size:16px}
+.tele-inputrow button{padding:11px 14px;border-radius:9px;border:1px solid #c1dad0;background:#fff;cursor:pointer}
+.tele-ctl{display:flex;flex-wrap:wrap;gap:9px;margin-top:15px}
+.tele-ctl button{padding:11px 14px;border-radius:10px;border:1px solid #bad5c7;background:#f1f8f3;color:#105638;cursor:pointer;font-weight:750}
+.tele-ctl button.primary{background:#0d8254;color:white;border-color:#0d8254}
+.tele-ctl button:disabled{opacity:.5;cursor:not-allowed}
+.tele-reading{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
+.tele-reading div{background:#e8f6ed;padding:18px;border-radius:13px}.tele-reading strong{font-size:28px;color:#0b754b;display:block}.tele-reading small{color:#617267}
+.tele-terminal{background:#0d1714;color:#a1ffbf;border-radius:14px;padding:18px;min-height:240px;white-space:pre-wrap;word-break:break-word;font:14px/1.75 ui-monospace,Consolas,monospace}
+.tele-hint{color:#5c7166;font-size:13px;line-height:1.5}
+@media(max-width:850px){.tele-hero,.tele-play{grid-template-columns:1fr}.tele-shotgrid{grid-template-columns:1fr}.tele-stack{grid-template-columns:1fr 1fr}}
+@media(max-width:450px){.tele-files,.tele-stack{grid-template-columns:1fr}.tele-hero{padding-top:32px}.tele-panel{padding:15px}}

@@ -1,0 +1,7 @@
+Communication Systems 2: AM, FM, ASK, PSK, FSK, PCM
+
+COMPLETE PORTFOLIO: Extract the complete ZIP into the root of NneteTeise/nneteteise.github.io, preserving .git, then Commit to main and Push origin.
+
+ADD-ON: Copy the projects/communication-systems-modulation/ folder into your existing GitHub repository. Add the HTML card in ADD_COMMUNICATIONS_CARD.html to the projects section of the existing index.html.
+
+The original Word lab report contains a student number, so the public version is a PDF with that number redacted. Original MATLAB .m scripts were not provided; the interactive demo is a separate educational reconstruction.
