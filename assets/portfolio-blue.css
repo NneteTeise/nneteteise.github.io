@@ -1,0 +1,62 @@
+/* Nnete Teise — grey & blue portfolio refresh (2026) */
+:root{--ink:#243246;--sub:#647489;--mint:#ebf1f7;--green:#276ea5;--line:#dbe3eb;--paper:#f3f5f8;--white:#fff}
+body{background:#f3f5f8;color:#243246}
+.nav{background:rgba(250,252,255,.95);border-color:#dae2ea}
+.navrow{padding-top:15px;padding-bottom:15px}
+.brand{color:#203653;font-size:16px}
+.navlinks{gap:22px}
+.navlinks a{color:#34485d;font-weight:650;position:relative}
+.navlinks a:hover,.navlinks a:focus-visible{color:#20669e}
+a:focus-visible{outline-color:#73a7d3}
+.hero-banner{max-width:none;padding:0;min-height:570px;background:linear-gradient(110deg,#1c3046 0%,#2c4158 70%,#344d68 100%);color:#fff;position:relative;overflow:hidden;border-bottom:1px solid #364e68}
+.hero-banner::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 26% 10%,rgba(125,158,195,.19),transparent 55%);pointer-events:none}
+.hero-banner::after{content:"";position:absolute;right:0;top:0;bottom:0;width:47%;background-image:linear-gradient(90deg,#273f58 0%,rgba(39,63,88,.08) 25%,rgba(21,39,59,0) 65%),url("nnete-profile-background.webp");background-position:center,center 28%;background-size:cover;box-shadow:inset 0 0 0 500px rgba(20,42,64,.08);z-index:0}
+.hero-banner .hero-inner{position:relative;z-index:1;display:flex;align-items:center;min-height:570px}
+.hero-banner .hero-content{max-width:720px;width:62%;padding:70px 0}
+.hero-kicker{font-size:12px;font-weight:850;text-transform:uppercase;letter-spacing:.17em;color:#bfd4ed}
+.hero-separator{padding:0 .35rem;color:#90aec9}
+.hero-banner h1{font-size:clamp(40px,5vw,68px);letter-spacing:-.052em;line-height:1.08;margin:25px 0;color:#fff}
+.hero-banner h1 span{color:#a9cdee}
+.hero-lede{max-width:570px;font-size:17px;line-height:1.75;color:#e2eaf4;margin:0}
+.hero-actions{display:flex;flex-wrap:wrap;gap:11px;margin-top:31px}
+.hero-actions .btn{background:#e4edf7;border-color:#e4edf7;color:#1d3852}
+.hero-actions .btn.outline{background:rgba(10,31,53,.32);border-color:#8aa7c7;color:#fff}
+.hero-actions .btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(9,27,44,.25)}
+.section{padding-top:54px;padding-bottom:54px;scroll-margin-top:105px}
+.section h2{color:#22344c}
+.section-label{color:#246ca7;text-transform:uppercase;letter-spacing:.16em;font-size:12px;font-weight:850;margin-bottom:15px}
+.section-intro{max-width:690px;margin-bottom:27px;color:#5c6e83!important}
+.about-layout{display:grid;grid-template-columns:1fr 1.3fr;gap:60px;align-items:start}
+.about-layout h2{font-size:clamp(27px,3vw,40px)}
+.about-layout p{font-size:16px;line-height:1.8;margin:0 0 17px;color:#4e6176}
+.text-link{font-weight:800;color:#246ca7;text-decoration:none}
+.featured-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-bottom:22px}
+.featured-grid > div{min-width:0}
+.featured-grid article{height:100%;transition:transform .18s,box-shadow .18s}
+.featured-grid article:hover,.grid .card:hover{transform:translateY(-3px);box-shadow:0 12px 34px #2c48661a}
+.featured-grid img{aspect-ratio:16/9;object-fit:cover;max-height:265px}
+.card,.skill-group,.education-item{border:1px solid #dbe3ec;box-shadow:0 5px 20px rgba(34,55,79,.05)}
+.btn{background:#2b6eaa;border-color:#2b6eaa;color:white}
+.btn.outline{background:#fdfefe;border-color:#bdcfdf;color:#245d90}
+.eyebrow{color:#246ca7}
+.skills-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.skill-group{background:#fff;border-radius:18px;padding:25px;min-height:272px}
+.skill-group h3{margin:14px 0 10px;font-size:19px;line-height:1.3;color:#243a52}
+.skill-group p{font-size:14px;color:#52667a;margin:0 0 17px;line-height:1.65}
+.skill-icon{width:40px;height:40px;display:grid;place-items:center;border-radius:11px;background:#e6eff7;color:#2c6fa7;font-size:12px;font-weight:850}
+.tag-list{display:flex;flex-wrap:wrap;gap:8px}
+.tag-list span{font-size:12px;font-weight:700;color:#345d82;background:#edf3f8;border:1px solid #d6e3ee;border-radius:50px;padding:5px 11px}
+.education-list{display:grid;gap:15px}
+.education-item{display:grid;grid-template-columns:195px 1fr;gap:24px;padding:26px;background:#fff;border-radius:17px}
+.education-year{font-weight:850;color:#2b6eaa;font-size:15px}
+.education-item h3{margin:0 0 8px;font-size:19px;color:#243a52}
+.education-item p{margin:0 0 12px;font-size:14px;color:#617083}
+.education-item .edu-place{font-size:15px;color:#3b536b;font-weight:700}
+.education-note{font-size:12px!important;color:#788796!important;margin-top:15px}
+#cv{background:#eaf0f6;max-width:none;padding:54px max(24px,calc((100vw - 1072px)/2))}
+#cv .card{background:#fff}
+#about{margin-top:10px}
+.foot{background:#263b56;color:#d7e5f3;border-top-color:#3c5370}
+@media(max-width:1000px){.skills-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-banner::after{width:48%}.hero-banner .hero-content{width:65%}}
+@media(max-width:720px){.navrow{flex-direction:column;align-items:flex-start;gap:11px}.navlinks{gap:15px}.navlinks a{font-size:13px}.hero-banner{min-height:0}.hero-banner::after{width:100%;height:330px;bottom:auto;background-image:linear-gradient(0deg,#1f344a 0%,rgba(31,52,74,.04) 40%),url("nnete-profile-background.webp");background-position:center,center 31%;background-size:cover}.hero-banner .hero-inner{min-height:0;display:block}.hero-banner .hero-content{width:100%;padding-top:338px;padding-bottom:50px}.hero-banner h1{font-size:clamp(36px,8vw,52px);margin:17px 0}.hero-lede{font-size:16px}.featured-grid{grid-template-columns:1fr}.skills-grid{grid-template-columns:1fr}.about-layout{grid-template-columns:1fr;gap:0}.education-item{grid-template-columns:1fr;gap:6px;padding:20px}.section{padding-top:37px;padding-bottom:37px}.hero-kicker{font-size:11px}.hero-actions .btn{padding:11px 15px}}
+@media(prefers-reduced-motion:reduce){.hero-actions .btn,.featured-grid article{transition:none}}
